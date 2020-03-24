@@ -1,10 +1,14 @@
 package com.tiaedu.travel.attachment.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 
-//附件文件实体类
-public class Attachment {
+/**
+ * 附件文件实体类
+ */
+public class Attachment implements Serializable {
 
+    private static final long serialVersionUID = -2066834040491586051L;
     private Integer id;
     private String title;
     private String fileName;
