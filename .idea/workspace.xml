@@ -19,6 +19,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Six-tia &lt;tianyi.666tia@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IgnoredFileRootStore">
@@ -83,10 +88,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="667" y="29" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1585054852908" />
-    <state x="263" y="0" key="CommitChangelistDialog2" timestamp="1585055115359">
+    <state x="263" y="0" key="CommitChangelistDialog2" timestamp="1585055212172">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="263" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1585055115359" />
+    <state x="263" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1585055212172" />
     <state x="421" y="97" key="FileChooserDialogImpl" timestamp="1584953693624">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
