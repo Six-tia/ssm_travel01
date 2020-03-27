@@ -218,7 +218,7 @@
       <workItem from="1585219748625" duration="24363000" />
       <workItem from="1585310383327" duration="237000" />
       <workItem from="1585310631571" duration="906000" />
-      <workItem from="1585311552822" duration="279000" />
+      <workItem from="1585311552822" duration="2355000" />
     </task>
     <task id="LOCAL-00001" summary="Added an entity file: Project.java&#10;Modified an entity file: Attachment.java">
       <created>1585055214633</created>
@@ -248,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585311750658</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Finished the initial step of project module.&#10;Added files from Front End(Reference).">
+      <created>1585311878186</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585311878186</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,10 +287,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="437" y="249" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/0.0.1280.680@0.0.1280.680" timestamp="1585303059221" />
-    <state x="263" y="0" key="CommitChangelistDialog2" timestamp="1585311747042">
+    <state x="263" y="0" key="CommitChangelistDialog2" timestamp="1585311876820">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="263" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1585311747042" />
+    <state x="263" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1585311876820" />
     <state x="421" y="97" key="FileChooserDialogImpl" timestamp="1585303057746">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -348,9 +355,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="121" y="0" width="1038" height="680" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1585303497712" />
-    <state x="233" y="75" key="Vcs.Push.Dialog.v2" timestamp="1585311763922">
+    <state x="233" y="75" key="Vcs.Push.Dialog.v2" timestamp="1585311882649">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="75" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1585311763922" />
+    <state x="233" y="75" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1585311882649" />
   </component>
 </project>
