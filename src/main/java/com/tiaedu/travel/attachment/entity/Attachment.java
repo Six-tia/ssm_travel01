@@ -8,7 +8,9 @@ import java.util.Date;
  */
 public class Attachment implements Serializable {
 
-    private static final long serialVersionUID = -2066834040491586051L;
+    private static final long serialVersionUID = 2240260721210358400L;
+
+
     private Integer id;
     private String title;
     private String fileName;

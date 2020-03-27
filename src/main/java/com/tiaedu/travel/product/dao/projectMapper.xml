@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tiaedu.travel.product.dao.ProjectDao">
+
+    <!-- 定义一个查询信息获取所有项目信息-->
+    <!-- id:接口对应方法名
+         resultType:对应结果封装到的实体
+         sql语句建议不要加“;”，因为针对不同的数据库规范可能不一定适用-->
+    <select id = "findProjects"
+            resultType="com.tiaedu.travel.product.entity.Project">
+           select * from tms_projects
+    </select>
+
+</mapper>

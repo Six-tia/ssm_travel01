@@ -16,17 +16,29 @@ import java.util.Date;
  */
 public class Project implements Serializable {
 
-    private static final long serialVersionUID = 5850357988911265658L;
+    private static final long serialVersionUID = 8238110775705102895L;
+
+    /**项目id*/
     private Integer id;
-    private String code;
+    /**项目名称*/
     private String name;
-    private Date beginDate;
-    private Date endDate;
-    private Integer valid=1; //设置默认值为1表示项目默认为有效状态
+    /**项目编号*/
+    private String code;
+    /**开始日期*/
+    private Date  beginDate;
+    /**结束日期*/
+    private Date  endDate;
+    /**有效*/
+    private Integer valid=1;
+    /**备注*/
     private String note;
+    /**创建时间*/
     private Date createdTime;
+    /**修改时间*/
     private Date modifiedTime;
+    /**创建用户*/
     private String createdUser;
+    /**修改用户*/
     private String modifiedUser;
 
     public Integer getId() {
@@ -115,5 +127,22 @@ public class Project implements Serializable {
 
     public void setModifiedUser(String modifiedUser) {
         this.modifiedUser = modifiedUser;
+    }
+
+    @Override
+    public String toString() {
+        return "Project{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", code='" + code + '\'' +
+                ", beginDate=" + beginDate +
+                ", endDate=" + endDate +
+                ", valid=" + valid +
+                ", note='" + note + '\'' +
+                ", createdTime=" + createdTime +
+                ", modifiedTime=" + modifiedTime +
+                ", createdUser='" + createdUser + '\'' +
+                ", modifiedUser='" + modifiedUser + '\'' +
+                '}';
     }
 }
