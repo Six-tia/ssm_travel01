@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
-  <display-name>ttms1.01</display-name>
+  <display-name>ssm_travel01</display-name>
    <servlet>
+	   <!-- DispatcherServlet是前置控制器，拦截匹配的请求，拦截的匹配规则要求自己定义
+	   		把拦截下来的请求，依据某某规则分发到目标Controller(我们写的Action)来处理
+	   		“某某规则”：是根据你使用了哪个HandlerMapping接口的实现类的不同而不同-->
 		<servlet-name>dispatcherServlet</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
 			<param-value>classpath:spring-*.xml</param-value>
 		</init-param>
+	   <!-- 启动顺序，指此Servlet随Servlet容器一起启动 -->
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>dispatcherServlet</servlet-name>
+		<!-- 指会拦截以.do结尾的请求-->
 		<url-pattern>*.do</url-pattern>
 	</servlet-mapping>
 </web-app>

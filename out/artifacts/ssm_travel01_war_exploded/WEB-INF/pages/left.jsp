@@ -42,8 +42,11 @@
     <!-- /.sidebar -->
   </aside>
 <script type="text/javascript">
+  //#后为某元素id，下列为点击它后的操作函数（此为项目管理id）
 $('#load-project-id').click(function(){
+    //+Math.random(1000)操作是因为可能有缓存
 	var url="project/listUI.do?t="+Math.random(1000);
+	//load()为ajax函数，为异步加载此url到“.content”位置，因为content为类选择器，所以加上“.”
 	$(".content").load(url);
 })
 $('#load-team-id').click(function(){

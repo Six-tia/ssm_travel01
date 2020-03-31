@@ -22,9 +22,9 @@
      3)controller(@Controller)
      4).....
      -->
-    <context:component-scan base-package="com.tiaedu.travel" />
     <!-- spring mvc 注解及类型转换 -->
     <mvc:annotation-driven conversion-service="conversionService" />
+    <context:component-scan base-package="com.tiaedu.travel" />
     <bean id="conversionService"
         class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
     </bean>
