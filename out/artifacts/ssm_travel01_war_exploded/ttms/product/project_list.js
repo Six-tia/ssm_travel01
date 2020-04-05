@@ -1,26 +1,93 @@
 //由于引入了jQuery，所以可以直接用$
 //表示文档（页面）加载完成后执行此匿名函数
 $(document).ready(function(){
+	//js添加断点方法如下，直接加上debugger关键字
+	//debugger
 	doGetProjects();
 })
 
 /*获取项目信息*/
 function doGetProjects(){
-	var url = "doGetProjects.do";
+	//此处测试从project_list.jsp文件直接进入，因此url不用加project/
+	//若正常情况下project_list.jsp是index.jsp文件的异步加载，应该加上project/
+	//var url = "project/doGetProjects.do";
+	var url = "project/doGetPageObjects.do";
+	//ajax的getJSON函数的参数赋值方式，此名字为Controller类对应的参数名，
+	//两者相同才能保证注入
+	var pageCurrent = $("#pageId").data("pageCurrent");
+
+	if(!pageCurrent)
+		pageCurrent = 1;
+	var params = {"pageCurrent":pageCurrent};
 	//第一种写法
 	// $.ajax({
 	// 	url:url,
 	// 	type:"get",
+	//  async:false, //默认为true（异步），false为同步
 	// 	dataType:"json",
 	// 	success:function(result){
 	//
 	// 	}
 	// });
-	//第二种写法
-	$.getJSON(url, function(result){
-		console.log(result); //json对象
-	});
+	//第二种写法（默认为get请求）
+	//若要使用result，即以下方法return result，会出现错误，因为
+	//ajax是异步的，即此函数未执行完就会return了，接着执行后面的
+	// $.getJSON(url, function(result){
+	// 	console.log(result); //自动将json串封装为json对象,在控制台打印
+	// 	//return result;
+	// 	setTableBodyRows(result);
+	// });
+	$.getJSON(url, params, function(result){
+			console.log(result); //map格式json对象
+			setTableBodyRows(result.list); //取出map中key为list的value
+			setPagination(result.pageObject);
+		});
+
 }
+
+/*将数据显示在表格（table对象）的body中*/
+function setTableBodyRows(result){
+	//1.获得tbody对象（project_list.jsp中id为tbodyId的对象）
+	var tbody = $("#tbodyId");
+	tbody.empty();
+	//2.迭代数据集Result
+	//for(var i = 0; i < result.length; i++){}
+	for(var i in result){
+		//2.1.构建tr对象
+		var tr = $("<tr></tr>>");
+		//2.2.构建每行td对象,并填充具体数据
+		//写法1
+		//var td0 = $("<td></td>>");
+		//td0.append(result[i].id);
+		//写法2
+			//checkBox设定了name而非id，因为id是唯一的，但是name可以有多个值（多条记录）
+		var tds = "<td><input type = 'checkbox' name = 'chenkedID' value = '" + result[i].id + "'></td>" +
+			"<td>" + result[i].code + "</td>>" +
+			"<td>" + result[i].name + "</td>>" +
+			//因为result传来的是json数据，因此日期被转换为长整型，需要重新转换为日期
+			//方法1：使用js自带的toLocaleDateString()方法转换
+			//"<td>" + new Date(result[i].beginDate).toLocaleDateString() + "</td>>" +
+			//"<td>" + new Date(result[i].endDate).toLocaleDateString() + "</td>>" +
+			//方法2：继承了jachson中的类JsonSerializer<Date>，
+			// 编写了com.tiaedu.travel.common.web.JsonDateTypeConvert.java实现自动转换
+			//通过在对应的getter()方法上加上注解，使填充到json中时自动转换为目标格式
+			"<td>" + result[i].beginDate + "</td>>" +
+			"<td>" + result[i].endDate + "</td>>" +
+			//1默认为有效，0默认为无效
+			"<td>" + (result[i].valid?"valid":"invalid") + "</td>>" +
+			//button的class为bootstrap定义好的，可以直接去bootstrap网站上查找喜欢的样式，
+			//将对应类的名字加上就可以用了
+			"<td><input type = 'button' value = '修改' class = 'btn btn-success'></td>>";
+		//2.3.将td添加到tr中
+		tr.append(tds);
+		//2.4.将tr追加到tbody中
+		tbody.append(tr);
+	}
+}
+
+
+
+
 
 // $(document).ready(function(){
 // 	//在queryFormId对应对象的btn-search元素上注册click事件

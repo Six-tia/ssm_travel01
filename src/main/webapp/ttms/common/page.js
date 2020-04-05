@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	//在pageId对应的对象的相关元素上注册点击事件
 	$("#pageId").on('click',
 	'.pre,.next,.first,.last',jumpToPage);
 });
@@ -16,8 +17,10 @@ function setPagination(pageObject){
 }
 //定义一个函数,通过此函数实现页面的跳转
 function jumpToPage(){
+	//以$赋值的变量都有data()函数（key-value）
 	//获得点击对象上class属性对应的值,根据此值
 	//判定具体点击的是哪个对象(例如上一页,下一页)
+	debugger
 	var clazz=$(this).attr("class");
 	//获得pageId对象上绑定的pageCurrent对应的值
 	var pageCurrent=$('#pageId').data("pageCurrent");
@@ -42,7 +45,9 @@ function jumpToPage(){
 	//重写绑定pageCurrent的值,
 	$('#pageId').data("pageCurrent",pageCurrent);
 	//重新执行查询操作(根据pageCurrent的值)
-	doGetObjects();
+	//此处调用的是project_list.jsp的方法，因为两个js文件都在同一个jsp文件中被
+	//调用了，因此可以直接使用
+	doGetProjects();
 }
 
 

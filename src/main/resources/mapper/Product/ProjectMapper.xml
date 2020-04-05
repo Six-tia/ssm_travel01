@@ -11,4 +11,18 @@
            select * from tms_projects
     </select>
 
+    <!-- 查询分页项目信息 -->
+    <!-- #{}中放的是@Param()中的值 -->
+    <select id = "findPageProjects"
+            resultType="com.tiaedu.travel.product.entity.Project">
+        select * from tms_projects order by createdTime desc
+            limit #{startIndex},#{pageSize}
+    </select>
+
+    <!-- 查询现有项目条数 -->
+    <select id = "getRowCount"
+            resultType="int">
+        select count(*) from tms_projects
+    </select>
+
 </mapper>

@@ -3,11 +3,6 @@
 <%@taglib prefix="shiro" uri="http://shiro.apache.org/tags" %>
 <c:set var="basePath" value="${pageContext.request.contextPath}"></c:set>
 
-<script src="${basePath}/jquery/jquery-3.2.1.min.js"></script>
-<script src="${basePath}/jquery/jquery-ui.min.js"></script>
-<script src="${basePath}/jquery/jquery.validate.min.js"></script>
-<script src="${basePath}/jquery/jquery.form.js"></script>
-
 <script type="text/javascript" src="${basePath}/ttms/product/project_list.js"></script>
 <script type="text/javascript" src="${basePath}/ttms/common/page.js"></script>
 

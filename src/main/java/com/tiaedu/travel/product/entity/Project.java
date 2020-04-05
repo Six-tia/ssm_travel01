@@ -1,5 +1,8 @@
 package com.tiaedu.travel.product.entity;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.tiaedu.travel.common.web.JsonDateTypeConvert;
+
 import java.io.Serializable;
 import java.util.Date;
 
@@ -65,6 +68,9 @@ public class Project implements Serializable {
         this.name = name;
     }
 
+    //将此值填充到json串时先按照指定格式进行转换
+    //（com.tiaedu.travel.common.web.JsonDateTypeConvert.java）
+    @JsonSerialize(using = JsonDateTypeConvert.class)
     public Date getBeginDate() {
         return beginDate;
     }
@@ -73,6 +79,7 @@ public class Project implements Serializable {
         this.beginDate = beginDate;
     }
 
+    @JsonSerialize(using = JsonDateTypeConvert.class)
     public Date getEndDate() {
         return endDate;
     }
