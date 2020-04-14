@@ -24,6 +24,15 @@ public interface ProjectService {
      * 2.获取分页信息（总记录数，总页数，...）
      * 因为项目信息包含多种因此使用map类型
      * */
-    Map<String, Object> findPageProjects(int pageCurrent);
+    Map<String, Object> findPageProjects(String name,
+                                         Integer valid,
+                                         int pageCurrent);
+
+    /**
+     *
+     * @param valid 状态
+     * @param id 由多个id构成的字符串，因为页面传来的不会自动变成数组
+     */
+    void validById(Integer valid, String id);
 
 }

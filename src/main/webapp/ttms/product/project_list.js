@@ -3,11 +3,20 @@
 $(document).ready(function(){
 	//js添加断点方法如下，直接加上debugger关键字
 	//debugger
-	doGetProjects();
+	$("#queryFormId").on("click", ".btn-search", doQueryObjects)
+	doGetObjects();
 })
 
-/*获取项目信息*/
-function doGetProjects(){
+/**点击查询按钮执行方法*/
+function doQueryObjects(){
+	//1.初始化当前页码数（查询后应该从第一页显示）
+	$("#pageId").data("pageCurrent", 1);
+	//2.根据条件查询数据
+	doGetObjects();
+}
+
+/**获取项目信息*/
+function doGetObjects(){
 	//此处测试从project_list.jsp文件直接进入，因此url不用加project/
 	//若正常情况下project_list.jsp是index.jsp文件的异步加载，应该加上project/
 	//var url = "project/doGetProjects.do";
@@ -19,6 +28,10 @@ function doGetProjects(){
 	if(!pageCurrent)
 		pageCurrent = 1;
 	var params = {"pageCurrent":pageCurrent};
+	//若以下两个变量都有值，则params有3个键值对
+	params.name = $("#searchNameId").val();
+	params.valid = $("#searchValidId").val();
+	console.log(params); //用于检测params
 	//第一种写法
 	// $.ajax({
 	// 	url:url,

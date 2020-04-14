@@ -17,6 +17,7 @@
 			</div>
 			<div class="page-stats"></div>
 		</div>
+        <!-- jQuery在底层发送数据时，设置请求头的数据格式为utf-8 -->
 		<form method="post" id="queryFormId">
 		    <!-- 查询表单 -->
 			<div class="row page-search">

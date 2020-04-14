@@ -13,9 +13,45 @@
 
     <!-- 查询分页项目信息 -->
     <!-- #{}中放的是@Param()中的值 -->
+    <!--
+        下列<where>和<if>用到了mybatis动态sql的技术
+        因为where只有在用户查询时才会使用到，所以需要用标签来指定，而不是直接写成sql语句
+        <if>表示只有满足test的条件，才会执行其内的语句
+        tips：
+        1. 在valid的语句中前置了and，因为where中可能有两个条件需要满足（name&valid），
+        但是若不需要满足name的约束条件，加上and也不会出错，因为mybatis会自动删去and
+        2. 在test的条件中，例：test = "name!= null and name != ''"，name不需要写成：
+        #{name},因为会自动去寻找对应参数
+    -->
+    <!--
+        #{}和${}的区别:
+            #{}是预编译处理，$ {}是字符串替换。
+            mybatis在处理#{}时，会将sql中的#{}替换为?号，调用PreparedStatement的set方法来赋值；
+            mybatis在处理 $ { } 时，就是把 ${ } 替换成变量的值。
+            使用 #{} 可以有效的防止SQL注入，提高系统安全性。
+        （1）$ 符号一般用来当作占位符，就是被用来替换的。
+        （2）预编译的机制。预编译是提前对SQL语句进行预编译，而其后注入的参数将不会再进行SQL编译。
+            SQL注入是发生在编译的过程中，因为恶意注入了某些特殊字符，最后被编译成了恶意的执行操作。
+    -->
+
+    <!-- 将具有共性的sql语句段封装起来，可反复使用，减少冗余代码 -->
+    <sql id = "whereQuery">
+        <where>
+            <if test = "name != null and name != ''">
+                name like concat("%", #{name}, "%")
+            </if>
+            <if test="valid != null">
+                and valid = #{valid}
+            </if>
+        </where>
+    </sql>
+
     <select id = "findPageProjects"
             resultType="com.tiaedu.travel.product.entity.Project">
-        select * from tms_projects order by createdTime desc
+        select * from tms_projects
+            <!-- 使用已经封装好的语句段，通过其id提取 -->
+            <include refid="whereQuery"/>
+            order by createdTime desc
             limit #{startIndex},#{pageSize}
     </select>
 
@@ -23,6 +59,44 @@
     <select id = "getRowCount"
             resultType="int">
         select count(*) from tms_projects
+        <!-- 使用已经封装好的语句段，通过其id提取 -->
+        <include refid="whereQuery"/>
     </select>
+
+    <!-- 禁用或启用项目
+         update操作不需要返回值
+    -->
+    <update id = "validById">
+        update tms_projects
+        set valid = #{valid}
+        where id in
+        <!-- 动态sql，将传来的数组变成以下信息格式：(1,2,3,4,5)
+            item：集合中元素迭代时的别名，该参数为必选。
+            index：在list和数组中,index是元素的序号，在map中，index是元素的key，
+                该参数可选
+            open：foreach代码的开始符号，一般是(和close=")"合用。常用在in(),
+                values()时。该参数可选
+            separator：元素之间的分隔符，例如在in()的时候，separator=","
+                会自动在元素中间用“,“隔开，避免手动输入逗号导致sql错误，
+                如in(1,2,)这样。该参数可选。
+            close: foreach代码的关闭符号，一般是)和open="("合用。常用在in(),
+                values()时。该参数可选。
+            collection: 要做foreach的对象，作为入参时，List对象默认用"list"代替作
+                为键，数组对象有"array"代替作为键，Map对象没有默认的键。当然在作为入
+                参时可以使用@Param("keyName")来设置键，设置keyName后，list,array
+                将会失效。 除了入参这种情况外，还有一种作为参数对象的某个字段的时候。举
+                个例子：如果User有属性List ids。入参是User对象，那么这个collection
+                = "ids".如果User有属性Ids ids;其中Ids是个对象，Ids有个属性List id;
+                入参是User对象，那么collection = "ids.id"
+        -->
+        <foreach collection = "ids"
+                 open ="("
+                 close=")"
+                 item="item"
+                 separator=",">
+            #{item}   <!-- ids中的一个元素 -->
+        </foreach>
+
+    </update>
 
 </mapper>

@@ -46,13 +46,22 @@ public class TestProjectService {
     public void testFindPageObjects(){
         ProjectService projectService = cpx.getBean("projectServiceImpl",
                 ProjectService.class);
-        Map<String, Object> map = projectService.findPageProjects(2);
+        Map<String, Object> map = projectService.findPageProjects("环球",1,1);
         List<Project> list = (List<Project>) map.get("list");
         PageObject pageObject = (PageObject) map.get("pageObject");
         System.out.println(list.size()); //1
         Assert.assertEquals(1, list.size());
-        Assert.assertEquals(2, pageObject.getPageCount());
-        System.out.println(pageObject.getPageCount()); //2
+        Assert.assertEquals(1, pageObject.getPageCount());
+        System.out.println(pageObject.getPageCount()); //1
+    }
+
+    @Test
+    public void testValidById(){
+        ProjectService projectService = cpx.getBean("projectServiceImpl",
+                ProjectService.class);
+        Integer valid = 1;
+        String ids = "1,3,4";
+        projectService.validById(valid, ids);
     }
 
     @After
