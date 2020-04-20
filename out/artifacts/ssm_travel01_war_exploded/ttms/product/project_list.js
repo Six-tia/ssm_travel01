@@ -3,7 +3,9 @@
 $(document).ready(function(){
 	//js添加断点方法如下，直接加上debugger关键字
 	//debugger
-	$("#queryFormId").on("click", ".btn-search", doQueryObjects)
+	$("#queryFormId")
+		.on("click", ".btn-search", doQueryObjects)
+		.on("click", ".btn-valid, .btn-invalid", doValidById)
 	doGetObjects();
 })
 
@@ -74,7 +76,7 @@ function setTableBodyRows(result){
 		//td0.append(result[i].id);
 		//写法2
 			//checkBox设定了name而非id，因为id是唯一的，但是name可以有多个值（多条记录）
-		var tds = "<td><input type = 'checkbox' name = 'chenkedID' value = '" + result[i].id + "'></td>" +
+		var tds = "<td><input type = 'checkbox' name = 'checkedId' value = '" + result[i].id + "'></td>" +
 			"<td>" + result[i].code + "</td>>" +
 			"<td>" + result[i].name + "</td>>" +
 			//因为result传来的是json数据，因此日期被转换为长整型，需要重新转换为日期
@@ -98,8 +100,55 @@ function setTableBodyRows(result){
 	}
 }
 
-
-
+/*禁用或启用项目信息*/
+function doValidById(){
+	//1.设置valid值
+	var valid;
+	//1.1获取点击的对象
+	//写法一：比较笨重
+	// var cla = ${this}.attr("class");
+	// if(cla == "btn btn-primary btn-invalid"){
+	// 	valid = 0;
+	// }
+	//写法二：
+	if($(this).hasClass("btn-valid")){
+		valid = 1; //启用
+	}
+	if($(this).hasClass("btn-invalid")){
+		valid = 0; //禁用
+	}
+	//2.获得选中的checkbox（id）的值
+	var ids = "";
+	//迭代input对象
+	$("#tbodyId input[name='checkedId']")
+		.each(function(){
+			//判定此input对象是否是选中的
+			//debugger
+			if($(this).prop("checked")){ //prop为“checked”表示被选中
+				if(ids==""){
+					ids += $(this).val();
+				}else{
+					ids += "," + $(this).val(); //为项目id
+				}
+			}
+		});
+	console.log("valid=" + valid);
+	console.log("ids=" + ids);
+	if(ids == ""){
+		alert("please select at least one project!");
+		return;
+	}
+	//3.发起异步请求更新数据
+	var url = "project/doValidById.do";
+	var params={
+		"valid":valid,
+		"ids":ids
+	}
+	$.post(url,params,function(){
+		//重新执行查询操作
+		doGetObjects();
+	})
+}
 
 
 // $(document).ready(function(){

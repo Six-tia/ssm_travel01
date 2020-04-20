@@ -64,4 +64,17 @@ public class ProjectController {
      * ]
      */
 
+    /**
+     * 禁用和启用项目
+     * @param valid
+     * @param ids
+     * @return
+     */
+    @RequestMapping("doValidById")
+    @ResponseBody
+    public void doValidById(Integer valid, String ids){
+        projectService.validById(valid, ids);
+        //return "{}";
+    }
+
 }
