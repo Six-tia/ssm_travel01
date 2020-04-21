@@ -8,14 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5ae74457-7810-4339-9174-01d02348a73b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/WEB-INF/classes/com/tiaedu/travel/product/controller/ProjectController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/WEB-INF/classes/com/tiaedu/travel/product/controller/ProjectController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/WEB-INF/pages/product/project_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/WEB-INF/pages/product/project_list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/ttms/product/project_list.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/ttms/product/project_list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tiaedu/travel/common/exception/ControllerExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tiaedu/travel/common/exception/ControllerExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tiaedu/travel/common/web/JsonResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tiaedu/travel/common/web/JsonResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tiaedu/travel/product/controller/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tiaedu/travel/product/controller/ProjectController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ttms/product/project_list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ttms/product/project_list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/tiaedu/travel/product/controller/ProjectController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tiaedu/travel/product/controller/ProjectController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -257,7 +249,7 @@
       <workItem from="1586051243154" duration="19872000" />
       <workItem from="1586506061597" duration="6572000" />
       <workItem from="1586834679411" duration="12511000" />
-      <workItem from="1587454246198" duration="7183000" />
+      <workItem from="1587454246198" duration="7424000" />
     </task>
     <task id="LOCAL-00001" summary="Added an entity file: Project.java&#10;Modified an entity file: Attachment.java">
       <created>1585055214633</created>
@@ -322,7 +314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586844036957</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="project module&#10;function: exception handle">
+      <created>1587461605125</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1587461605125</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,7 +333,8 @@
     <MESSAGE value="Finished the initial step of project module.&#10;Added files from Front End(Reference)." />
     <MESSAGE value="Finished the controller step of project module.&#10;Change project_list.js&#10;Add some new comments" />
     <MESSAGE value="pageObject of project module&#10;function: search valid" />
-    <option name="LAST_COMMIT_MESSAGE" value="pageObject of project module&#10;function: search valid" />
+    <MESSAGE value="project module&#10;function: exception handle" />
+    <option name="LAST_COMMIT_MESSAGE" value="project module&#10;function: exception handle" />
   </component>
   <component name="WindowStateProjectService">
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585321974506">
@@ -365,10 +365,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="435" y="203" width="434" height="284" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1586509014316" />
-    <state x="263" y="0" key="CommitChangelistDialog2" timestamp="1587461564204">
+    <state x="263" y="0" key="CommitChangelistDialog2" timestamp="1587461600278">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="263" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1587461564204" />
+    <state x="263" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1587461600278" />
     <state x="421" y="97" key="FileChooserDialogImpl" timestamp="1586143604702">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -449,10 +449,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="121" y="0" width="1038" height="680" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1585750199833" />
-    <state x="233" y="75" key="Vcs.Push.Dialog.v2" timestamp="1586844042026">
+    <state x="233" y="75" key="Vcs.Push.Dialog.v2" timestamp="1587461608545">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="75" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1586844042026" />
+    <state x="233" y="75" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1587461608545" />
     <state x="336" y="167" key="com.intellij.ide.util.TipDialog" timestamp="1587454246215">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
