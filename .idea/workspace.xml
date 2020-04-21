@@ -249,7 +249,7 @@
       <workItem from="1586051243154" duration="19872000" />
       <workItem from="1586506061597" duration="6572000" />
       <workItem from="1586834679411" duration="12511000" />
-      <workItem from="1587454246198" duration="7424000" />
+      <workItem from="1587454246198" duration="7731000" />
     </task>
     <task id="LOCAL-00001" summary="Added an entity file: Project.java&#10;Modified an entity file: Attachment.java">
       <created>1585055214633</created>
@@ -321,7 +321,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587461605125</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="project module&#10;function: exception handle">
+      <created>1587461735075</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1587461735075</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,10 +372,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="435" y="203" width="434" height="284" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1586509014316" />
-    <state x="263" y="0" key="CommitChangelistDialog2" timestamp="1587461600278">
+    <state x="263" y="0" key="CommitChangelistDialog2" timestamp="1587461733429">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="263" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1587461600278" />
+    <state x="263" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1587461733429" />
     <state x="421" y="97" key="FileChooserDialogImpl" timestamp="1586143604702">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -445,14 +452,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1239" height="114" key="GridCell.Tab.3.right/0.0.1280.680@0.0.1280.680" timestamp="1587369429304" />
+    <state x="448" y="53" key="RollbackChangesDialog" timestamp="1587461727564">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="448" y="53" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1587461727564" />
     <state x="121" y="0" width="1038" height="680" key="SettingsEditor" timestamp="1585750199833">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="121" y="0" width="1038" height="680" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1585750199833" />
-    <state x="233" y="75" key="Vcs.Push.Dialog.v2" timestamp="1587461608545">
+    <state x="233" y="75" key="Vcs.Push.Dialog.v2" timestamp="1587461749287">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="75" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1587461608545" />
+    <state x="233" y="75" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1587461749287" />
     <state x="336" y="167" key="com.intellij.ide.util.TipDialog" timestamp="1587454246215">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
