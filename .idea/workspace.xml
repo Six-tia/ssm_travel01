@@ -9,10 +9,10 @@
     <list default="true" id="5ae74457-7810-4339-9174-01d02348a73b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/WEB-INF/classes/com/tiaedu/travel/product/controller/ProjectController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/WEB-INF/classes/com/tiaedu/travel/product/controller/ProjectController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/WEB-INF/classes/com/tiaedu/travel/product/dao/ProjectDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/WEB-INF/classes/com/tiaedu/travel/product/dao/ProjectDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/WEB-INF/classes/com/tiaedu/travel/product/service/ProjectService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/WEB-INF/classes/com/tiaedu/travel/product/service/ProjectService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/WEB-INF/classes/com/tiaedu/travel/product/service/impl/ProjectServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/WEB-INF/classes/com/tiaedu/travel/product/service/impl/ProjectServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/WEB-INF/pages/product/project_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/WEB-INF/pages/product/project_list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/ttms/product/project_list.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/ttms/product/project_list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tiaedu/travel/common/exception/ControllerExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tiaedu/travel/common/exception/ControllerExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tiaedu/travel/common/web/JsonResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tiaedu/travel/common/web/JsonResult.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tiaedu/travel/product/controller/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tiaedu/travel/product/controller/ProjectController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/ttms/product/project_list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ttms/product/project_list.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/tiaedu/travel/product/controller/ProjectController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tiaedu/travel/product/controller/ProjectController.class" afterDir="false" />
@@ -257,6 +257,7 @@
       <workItem from="1586051243154" duration="19872000" />
       <workItem from="1586506061597" duration="6572000" />
       <workItem from="1586834679411" duration="12511000" />
+      <workItem from="1587454246198" duration="7183000" />
     </task>
     <task id="LOCAL-00001" summary="Added an entity file: Project.java&#10;Modified an entity file: Attachment.java">
       <created>1585055214633</created>
@@ -364,10 +365,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="435" y="203" width="434" height="284" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1586509014316" />
-    <state x="263" y="0" key="CommitChangelistDialog2" timestamp="1586844030100">
+    <state x="263" y="0" key="CommitChangelistDialog2" timestamp="1587461564204">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="263" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1586844030100" />
+    <state x="263" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1587461564204" />
     <state x="421" y="97" key="FileChooserDialogImpl" timestamp="1586143604702">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -380,54 +381,54 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="429" y="44" key="Github.UntrackedFilesDialog/0.0.1280.680@0.0.1280.680" timestamp="1584953891037" />
-    <state width="1239" height="83" key="GridCell.Tab.0.bottom" timestamp="1587370420610">
+    <state width="1239" height="80" key="GridCell.Tab.0.bottom" timestamp="1587460489194">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1239" height="83" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587370420610" />
-    <state width="1239" height="83" key="GridCell.Tab.0.center" timestamp="1587370420610">
+    <state width="1239" height="80" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587460489194" />
+    <state width="1239" height="80" key="GridCell.Tab.0.center" timestamp="1587460489194">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1239" height="83" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1587370420610" />
-    <state width="1239" height="83" key="GridCell.Tab.0.left" timestamp="1587370420609">
+    <state width="1239" height="80" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1587460489194" />
+    <state width="1239" height="80" key="GridCell.Tab.0.left" timestamp="1587460489194">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1239" height="83" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1587370420609" />
-    <state width="1239" height="83" key="GridCell.Tab.0.right" timestamp="1587370420610">
+    <state width="1239" height="80" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1587460489194" />
+    <state width="1239" height="80" key="GridCell.Tab.0.right" timestamp="1587460489194">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1239" height="83" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1587370420610" />
-    <state width="1239" height="83" key="GridCell.Tab.1.bottom" timestamp="1587370420610">
+    <state width="1239" height="80" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1587460489194" />
+    <state width="1239" height="80" key="GridCell.Tab.1.bottom" timestamp="1587460489195">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1239" height="83" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587370420610" />
-    <state width="1239" height="83" key="GridCell.Tab.1.center" timestamp="1587370420610">
+    <state width="1239" height="80" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587460489195" />
+    <state width="1239" height="80" key="GridCell.Tab.1.center" timestamp="1587460489195">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1239" height="83" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1587370420610" />
-    <state width="1239" height="83" key="GridCell.Tab.1.left" timestamp="1587370420610">
+    <state width="1239" height="80" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1587460489195" />
+    <state width="1239" height="80" key="GridCell.Tab.1.left" timestamp="1587460489194">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1239" height="83" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1587370420610" />
-    <state width="1239" height="83" key="GridCell.Tab.1.right" timestamp="1587370420610">
+    <state width="1239" height="80" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1587460489194" />
+    <state width="1239" height="80" key="GridCell.Tab.1.right" timestamp="1587460489195">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1239" height="83" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1587370420610" />
-    <state width="1239" height="83" key="GridCell.Tab.2.bottom" timestamp="1587370420611">
+    <state width="1239" height="80" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1587460489195" />
+    <state width="1239" height="80" key="GridCell.Tab.2.bottom" timestamp="1587460489195">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1239" height="83" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587370420611" />
-    <state width="1239" height="83" key="GridCell.Tab.2.center" timestamp="1587370420611">
+    <state width="1239" height="80" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587460489195" />
+    <state width="1239" height="80" key="GridCell.Tab.2.center" timestamp="1587460489195">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1239" height="83" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1587370420611" />
-    <state width="1239" height="83" key="GridCell.Tab.2.left" timestamp="1587370420611">
+    <state width="1239" height="80" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1587460489195" />
+    <state width="1239" height="80" key="GridCell.Tab.2.left" timestamp="1587460489195">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1239" height="83" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1587370420611" />
-    <state width="1239" height="83" key="GridCell.Tab.2.right" timestamp="1587370420611">
+    <state width="1239" height="80" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1587460489195" />
+    <state width="1239" height="80" key="GridCell.Tab.2.right" timestamp="1587460489195">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1239" height="83" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1587370420611" />
+    <state width="1239" height="80" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1587460489195" />
     <state width="1239" height="114" key="GridCell.Tab.3.bottom" timestamp="1587369429304">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -452,10 +453,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="75" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1586844042026" />
-    <state x="336" y="167" key="com.intellij.ide.util.TipDialog" timestamp="1586834678794">
+    <state x="336" y="167" key="com.intellij.ide.util.TipDialog" timestamp="1587454246215">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="336" y="167" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1586834678794" />
+    <state x="336" y="167" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1587454246215" />
     <state x="363" y="236" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1585319063896">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -472,5 +473,19 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1586835045763" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/tiaedu/travel/product/controller/ProjectController.java</url>
+          <line>34</line>
+          <properties class="com.tiaedu.travel.product.controller.ProjectController" method="listUI">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

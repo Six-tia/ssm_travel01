@@ -53,10 +53,14 @@ function doGetObjects(){
 	// 	setTableBodyRows(result);
 	// });
 	$.getJSON(url, params, function(result){
-			console.log(result); //map格式json对象
-			setTableBodyRows(result.list); //取出map中key为list的value
-			setPagination(result.pageObject);
-		});
+			//console.log(result); //map格式json对象
+		if(result.state==1){
+			setTableBodyRows(result.data.list); //取出map中key为list的value
+			setPagination(result.data.pageObject);
+		}else{
+			alert(result.message);
+		}
+	});
 
 }
 
@@ -144,9 +148,15 @@ function doValidById(){
 		"valid":valid,
 		"ids":ids
 	}
-	$.post(url,params,function(){
-		//重新执行查询操作
-		doGetObjects();
+	$.post(url,params,function(result){
+		if(result.state==1){
+			alert(result.message);
+			//重新执行查询操作
+			doGetObjects();
+		}else{
+			alert(result.message);
+		}
+
 	})
 }
 

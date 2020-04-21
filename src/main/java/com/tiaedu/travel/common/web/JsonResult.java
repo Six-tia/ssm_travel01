@@ -18,6 +18,13 @@ public class JsonResult {
 		this.state=SUCCESS;//1
 		this.message="OK";
 	}
+
+	/**此构造函数用于传入具体信息的场景*/
+	public JsonResult(String message){
+		this.state = SUCCESS;
+		this.message = message;
+	}
+
 	/**有具体业务数据返回时,使用此构造方法*/
 	public JsonResult(Object data){
 		this();
