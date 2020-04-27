@@ -11,6 +11,7 @@ $('.datepicker').datepicker({
 	<div class="form-group">
 		<label for="nameId" class="col-sm-2 control-label" >项目名称:</label> 
 	    <div class="col-sm-10">
+			<!-- 在class中有required，表示此处为必须输入的内容 -->
 			<input type="text" class="form-control required" name="name" id="nameId"  placeholder="请输入名字">
 	    </div>
 	</div>
@@ -23,6 +24,7 @@ $('.datepicker').datepicker({
 	<div class="form-group">
 		<label for="project-code"  class="col-sm-2 control-label">开始时间:</label> 
 		<div class="col-sm-10">
+			<!-- datepicker为引入的控件，即时间选择的框架 -->
 		<input type="text" class="form-control datepicker " name="code" id="beginDateId">
 		</div>
 	</div>

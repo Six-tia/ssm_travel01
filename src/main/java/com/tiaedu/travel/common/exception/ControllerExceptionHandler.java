@@ -26,8 +26,7 @@ public class ControllerExceptionHandler {
 	 * */
 	@ExceptionHandler(ServiceException.class)
 	@ResponseBody
-	public JsonResult handleServiceException(
-			   ServiceException e){
+	public JsonResult handleServiceException(ServiceException e){
 		e.printStackTrace();
 		//将异常封装到JsonResult
 		return new JsonResult(e);

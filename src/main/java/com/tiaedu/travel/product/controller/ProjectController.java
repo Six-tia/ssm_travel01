@@ -63,7 +63,8 @@ public class ProjectController {
 
     /**
      * Controller中和操作数据相关的方法，建议加上do前缀
-     * @ResponseBody会将返回对象交给Spring转换为json格式数据
+     * @ResponseBody 会将返回对象交给Spring转换为json字符串
+     * 传到客户端后又会转化为json对象
      * 若不加@ResponseBody，则会默认转为model and view(页面)
      * Spring本身无法转换json，因此整合jackson的api
      * 返回json而非jsp页面是因为很多应用的打开形式可能不只是浏览器，还可能是手机App，软件等等
@@ -106,12 +107,26 @@ public class ProjectController {
         return new JsonResult(valid==1?"setting valid":"setting invalid");
     }
 
-//    @ExceptionHandler(ServiceException.class)
-//    @ResponseBody
-//    public JsonResult handleServiceException(
-//            ServiceException e){
-//        e.printStackTrace();
-//        return new JsonResult(e);
-//    }
+    /**
+     * Spring获得参数数据后会对数据解析然后调用
+     * peoject的setter方法将数据存储到project对象
+     * @param entity
+     * @return
+     */
+    @RequestMapping("doSaveProject")
+    @ResponseBody
+    public JsonResult doSaveProject(Project entity){
+        projectService.saveProject(entity);
+        return new JsonResult("insert ok");
+    }
+
+    /**
+     * 返回项目编辑页面
+     * @return
+     */
+    @RequestMapping("editUI")
+    public String editUI(){
+        return "product/project_edit";
+    }
 
 }

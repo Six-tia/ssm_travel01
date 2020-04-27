@@ -67,4 +67,31 @@ public class ProjectServiceImpl implements ProjectService {
 
     }
 
+    @Override
+    public void saveProject(Project entity) {
+        if(entity == null)
+            throw new ServiceException("New project cannot be null!");
+        int rows = projectDao.insertProject(entity);
+        if(rows<=0)
+            throw new ServiceException("Insert error!");
+    }
+
+    @Override
+    public void updateProject(Project entity) {
+        if(entity == null)
+            throw new ServiceException("New project cannot be null!");
+        int rows = projectDao.updateProject(entity);
+        if(rows<=0)
+            throw new ServiceException("Insert error!");
+    }
+
+    @Override
+    public Project findProjectById(Integer id) {
+        if(id == null)
+            throw new ServiceException("Project id cannot be null!");
+        Project project = projectDao.findProjectById(id);
+        if(project == null)
+            throw new ServiceException("Project of this id does not exist!");
+        return project;
+    }
 }

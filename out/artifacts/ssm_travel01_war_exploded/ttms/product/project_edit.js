@@ -63,14 +63,15 @@ function doSaveOrUpdate(){
 	if(!$("#editFormId").valid())return;
 	//2.获得输入的数据
 	var params=getEditFormData();
+	console.log(params);
 	//3.将数据异步发送到服务端
 	//3.1定义url(对应controller中的一个方法)
 	//获得模态框上绑定的id值
 	var id=$("#modal-dialog").data("id");
 	if(id)params.id=id;//动态添加属性(修改时需要id的值)
 	//根据id是否有值来判定是修改还是添加
-	var updateUrl="project/doUpdateObject.do";
-	var insertUrl="project/doSaveObject.do";
+	var updateUrl="project/doUpdateProject.do";
+	var insertUrl="project/doSaveProject.do";
 	var url=id?updateUrl:insertUrl;
 	//3.2发送异步请求	
 	$.post(url,params,function(result){

@@ -29,7 +29,7 @@ function jumpToPage(){
 	// $(this)是jquery对象，this就是简单指当前元素。
 	// jquery对象不能直接指定元素的属性（ele.style），
 	// 需要get（index）或者直接（index）取得对象中元素才行
-	debugger
+	//debugger
 	var clazz=$(this).attr("class");
 	//获得pageId对象上绑定的pageCurrent对应的值
 	var pageCurrent=$('#pageId').data("pageCurrent");

@@ -35,4 +35,13 @@ public interface ProjectService {
      */
     void validById(Integer valid, String id);
 
+    /**
+     *
+     * @param entity 新增项目
+     */
+    void saveProject(Project entity);
+
+    void updateProject(Project entity);
+
+    Project findProjectById(Integer id);
 }

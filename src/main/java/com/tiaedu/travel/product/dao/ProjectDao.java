@@ -57,4 +57,27 @@ public interface ProjectDao {
             @Param("valid") Integer valid,
             @Param("ids") String[] ids);
 
+    /**
+     * 添加项目信息
+     * 此处不能加@Params注解，若加上@Params("entity")，则mapper文件中对应的参数要写成：
+     * #{entity.get方法后的单词（例：getCode()->#{entity.code}）}
+     * @return
+     */
+    int insertProject(Project entity);
+
+    /**
+     * 更新项目信息
+     * @param entity
+     * @return
+     */
+    int updateProject(Project entity);
+
+    /**
+     * 根据id寻找项目信息
+     * @param id
+     * @return
+     */
+    Project findProjectById(
+            @Param("id") Integer id);
+
 }
