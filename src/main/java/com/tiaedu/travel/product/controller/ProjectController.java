@@ -129,4 +129,18 @@ public class ProjectController {
         return "product/project_edit";
     }
 
+    @RequestMapping("doFindProjectById")
+    @ResponseBody
+    public JsonResult doFindProjectById(Integer id){
+        Project project = projectService.findProjectById(id);
+        return new JsonResult(project);
+    }
+
+    @RequestMapping("doUpdateProject")
+    @ResponseBody
+    public JsonResult doUpdateProject(Project project){
+        projectService.updateProject(project);
+        return new JsonResult("Update successfully!");
+    }
+
 }

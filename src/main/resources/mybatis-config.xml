@@ -6,6 +6,7 @@
 
 <configuration>
 
+    <!-- settings必须写在后面标签的前面 -->
     <settings>
         <!-- mybatis控制台LOG输出 -->
         <setting name="logImpl" value="LOG4J2" />
@@ -25,6 +26,7 @@
      -->
     <typeAliases>
         <package name="com.tiaedu.travel.product.entity"/>
+        <package name="com.tiaedu.travel.system.entity" />
     </typeAliases>
 
 

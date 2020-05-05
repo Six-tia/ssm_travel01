@@ -7,18 +7,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ae74457-7810-4339-9174-01d02348a73b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tiaedu/travel/product/controller/TeamController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tiaedu/travel/product/dao/TeamDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tiaedu/travel/product/entity/Team.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tiaedu/travel/product/service/TeamService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tiaedu/travel/product/service/impl/TeamServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/Product/TeamMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/product/service/TestTeamService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tiaedu/travel/common/exception/ControllerExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tiaedu/travel/common/exception/ControllerExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/WEB-INF/classes/com/tiaedu/travel/product/controller/ProjectController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/WEB-INF/classes/com/tiaedu/travel/product/controller/ProjectController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/WEB-INF/classes/com/tiaedu/travel/product/dao/ProjectDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/WEB-INF/classes/com/tiaedu/travel/product/dao/ProjectDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/WEB-INF/classes/com/tiaedu/travel/product/entity/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/WEB-INF/classes/com/tiaedu/travel/product/entity/Project.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/WEB-INF/classes/com/tiaedu/travel/product/service/ProjectService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/WEB-INF/classes/com/tiaedu/travel/product/service/ProjectService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/WEB-INF/classes/com/tiaedu/travel/product/service/impl/ProjectServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/WEB-INF/classes/com/tiaedu/travel/product/service/impl/ProjectServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/WEB-INF/classes/mapper.System/SysMenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/WEB-INF/classes/mapper.System/SysMenuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/WEB-INF/classes/mapper/Product/ProjectMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/WEB-INF/classes/mapper/Product/ProjectMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/WEB-INF/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/WEB-INF/classes/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/WEB-INF/pages/product/project_edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/WEB-INF/pages/product/project_edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/ttms/common/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/ttms/common/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/ttms/product/project_edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/ttms/product/project_edit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/ttms/product/project_list.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/ttms/product/project_list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/ttms/product/team_list.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/ssm_travel01_war_exploded/ttms/product/team_list.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tiaedu/travel/product/controller/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tiaedu/travel/product/controller/ProjectController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tiaedu/travel/product/dao/ProjectDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tiaedu/travel/product/dao/ProjectDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tiaedu/travel/product/service/ProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tiaedu/travel/product/service/ProjectService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tiaedu/travel/product/service/impl/ProjectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tiaedu/travel/product/service/impl/ProjectServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tiaedu/travel/product/entity/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tiaedu/travel/product/entity/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper.System/SysMenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper.System/SysMenuMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/Product/ProjectMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/Product/ProjectMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/product/project_edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/product/project_edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ttms/common/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ttms/common/page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/ttms/product/project_edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ttms/product/project_edit.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/ttms/product/project_list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ttms/product/project_list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/ttms/product/team_list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/ttms/product/team_list.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/product/service/TestProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/product/service/TestProjectService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tiaedu/travel/product/controller/ProjectController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tiaedu/travel/product/controller/ProjectController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tiaedu/travel/product/entity/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tiaedu/travel/product/entity/Project.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tiaedu/travel/product/service/impl/ProjectServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tiaedu/travel/product/service/impl/ProjectServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper.System/SysMenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper.System/SysMenuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/Product/ProjectMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/Product/ProjectMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/product/service/TestProjectService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/product/service/TestProjectService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/问题记录.docx" beforeDir="false" afterPath="$PROJECT_DIR$/问题记录.docx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,9 +58,9 @@
       <list>
         <option value="spring-beans.schema" />
         <option value="mybatis-config" />
+        <option value="mybatis-mapper" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="mybatis-mapper" />
       </list>
     </option>
   </component>
@@ -78,7 +106,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="E:/redis/jedis" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/mapper/Product" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Facets" />
@@ -88,16 +116,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.tiaedu.travel.product.entity" />
       <recent name="com.tiaedu.travel.product.dao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IDEA_Project\ssm_travel01\src\main\resources\mapper\Product" />
       <recent name="E:\IDEA_Project\ssm_travel01\src\main\resources\mapper.System" />
       <recent name="E:\IDEA_Project\ssm_travel01\src\main\java\com\tiaedu\travel" />
       <recent name="E:\IDEA_Project\ssm_travel01\src\main" />
       <recent name="E:\IDEA_Project\ssm_travel01\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestProjectService.testFindProjectById">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.51">
     <configuration name="TestProjectService.testFindProjectById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ssm_travel01" />
       <extension name="coverage">
@@ -109,22 +139,6 @@
       <option name="PACKAGE_NAME" value="product.service" />
       <option name="MAIN_CLASS_NAME" value="product.service.TestProjectService" />
       <option name="METHOD_NAME" value="testFindProjectById" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestProjectService.testFindProjects" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ssm_travel01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="product.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="product.service" />
-      <option name="MAIN_CLASS_NAME" value="product.service.TestProjectService" />
-      <option name="METHOD_NAME" value="testFindProjects" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -162,7 +176,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestProjectService.testValidById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestTeamService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ssm_travel01" />
       <extension name="coverage">
         <pattern>
@@ -171,8 +185,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="product.service" />
-      <option name="MAIN_CLASS_NAME" value="product.service.TestProjectService" />
-      <option name="METHOD_NAME" value="testValidById" />
+      <option name="MAIN_CLASS_NAME" value="product.service.TestTeamService" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestTeamService.testFindPageTeams" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ssm_travel01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="product.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="product.service" />
+      <option name="MAIN_CLASS_NAME" value="product.service.TestTeamService" />
+      <option name="METHOD_NAME" value="testFindPageTeams" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -253,11 +282,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestProjectService.testFindProjectById" />
+        <item itemvalue="JUnit.TestTeamService.testFindPageTeams" />
+        <item itemvalue="JUnit.TestTeamService" />
         <item itemvalue="JUnit.TestProjectService.testUpdateProject" />
+        <item itemvalue="JUnit.TestProjectService.testFindProjectById" />
         <item itemvalue="JUnit.TestProjectService.testInsertProject" />
-        <item itemvalue="JUnit.TestProjectService.testFindProjects" />
-        <item itemvalue="JUnit.TestProjectService.testValidById" />
       </list>
     </recent_temporary>
   </component>
@@ -296,7 +325,8 @@
       <workItem from="1586834679411" duration="12511000" />
       <workItem from="1587454246198" duration="8190000" />
       <workItem from="1587462519351" duration="122000" />
-      <workItem from="1587624640355" duration="22570000" />
+      <workItem from="1587624640355" duration="33672000" />
+      <workItem from="1588666038751" duration="7258000" />
     </task>
     <task id="LOCAL-00001" summary="Added an entity file: Project.java&#10;Modified an entity file: Attachment.java">
       <created>1585055214633</created>
@@ -389,7 +419,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587462545472</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="project module&#10;function: add project">
+      <created>1587979209882</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1587979209882</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,7 +439,8 @@
     <MESSAGE value="Finished the controller step of project module.&#10;Change project_list.js&#10;Add some new comments" />
     <MESSAGE value="pageObject of project module&#10;function: search valid" />
     <MESSAGE value="project module&#10;function: exception handle" />
-    <option name="LAST_COMMIT_MESSAGE" value="project module&#10;function: exception handle" />
+    <MESSAGE value="project module&#10;function: add project" />
+    <option name="LAST_COMMIT_MESSAGE" value="project module&#10;function: add project" />
   </component>
   <component name="WindowStateProjectService">
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585321974506">
@@ -413,10 +451,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="408" y="146" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1585292262969" />
-    <state x="667" y="29" key="#com.intellij.ide.util.MemberChooser" timestamp="1587976626718">
+    <state x="667" y="29" key="#com.intellij.ide.util.MemberChooser" timestamp="1588669228794">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="667" y="29" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1587976626718" />
+    <state x="667" y="29" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1588669228794" />
     <state x="441" y="249" width="462" height="181" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1585303024589">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -433,14 +471,14 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="435" y="203" width="434" height="284" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1586509014316" />
-    <state x="263" y="0" key="CommitChangelistDialog2" timestamp="1587462543544">
+    <state x="263" y="0" key="CommitChangelistDialog2" timestamp="1588673396328">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="263" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1587462543544" />
-    <state x="421" y="97" key="FileChooserDialogImpl" timestamp="1587951329161">
+    <state x="263" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1588673396328" />
+    <state x="421" y="97" key="FileChooserDialogImpl" timestamp="1588667189289">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="97" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1587951329161" />
+    <state x="421" y="97" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1588667189289" />
     <state x="421" y="220" width="261" height="246" key="Github.ShareDialog" timestamp="1587462110996">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -449,54 +487,54 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="429" y="44" key="Github.UntrackedFilesDialog/0.0.1280.680@0.0.1280.680" timestamp="1584953891037" />
-    <state width="1239" height="74" key="GridCell.Tab.0.bottom" timestamp="1587976961299">
+    <state width="1239" height="2" key="GridCell.Tab.0.bottom" timestamp="1588672892657">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1239" height="74" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587976961299" />
-    <state width="1239" height="74" key="GridCell.Tab.0.center" timestamp="1587976961298">
+    <state width="1239" height="2" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588672892657" />
+    <state width="1239" height="2" key="GridCell.Tab.0.center" timestamp="1588672892657">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1239" height="74" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1587976961298" />
-    <state width="1239" height="74" key="GridCell.Tab.0.left" timestamp="1587976961298">
+    <state width="1239" height="2" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1588672892657" />
+    <state width="1239" height="2" key="GridCell.Tab.0.left" timestamp="1588672892657">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1239" height="74" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1587976961298" />
-    <state width="1239" height="74" key="GridCell.Tab.0.right" timestamp="1587976961298">
+    <state width="1239" height="2" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1588672892657" />
+    <state width="1239" height="2" key="GridCell.Tab.0.right" timestamp="1588672892657">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1239" height="74" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1587976961298" />
-    <state width="1239" height="96" key="GridCell.Tab.1.bottom" timestamp="1587976087579">
+    <state width="1239" height="2" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1588672892657" />
+    <state width="1239" height="2" key="GridCell.Tab.1.bottom" timestamp="1588672892657">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1239" height="96" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587976087579" />
-    <state width="1239" height="96" key="GridCell.Tab.1.center" timestamp="1587976087579">
+    <state width="1239" height="2" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588672892657" />
+    <state width="1239" height="2" key="GridCell.Tab.1.center" timestamp="1588672892657">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1239" height="96" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1587976087579" />
-    <state width="1239" height="96" key="GridCell.Tab.1.left" timestamp="1587976087579">
+    <state width="1239" height="2" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1588672892657" />
+    <state width="1239" height="2" key="GridCell.Tab.1.left" timestamp="1588672892657">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1239" height="96" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1587976087579" />
-    <state width="1239" height="96" key="GridCell.Tab.1.right" timestamp="1587976087579">
+    <state width="1239" height="2" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1588672892657" />
+    <state width="1239" height="2" key="GridCell.Tab.1.right" timestamp="1588672892657">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1239" height="96" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1587976087579" />
-    <state width="1239" height="96" key="GridCell.Tab.2.bottom" timestamp="1587976087579">
+    <state width="1239" height="2" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1588672892657" />
+    <state width="1239" height="2" key="GridCell.Tab.2.bottom" timestamp="1588672892658">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1239" height="96" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587976087579" />
-    <state width="1239" height="96" key="GridCell.Tab.2.center" timestamp="1587976087579">
+    <state width="1239" height="2" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588672892658" />
+    <state width="1239" height="2" key="GridCell.Tab.2.center" timestamp="1588672892658">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1239" height="96" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1587976087579" />
-    <state width="1239" height="96" key="GridCell.Tab.2.left" timestamp="1587976087579">
+    <state width="1239" height="2" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1588672892658" />
+    <state width="1239" height="2" key="GridCell.Tab.2.left" timestamp="1588672892658">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1239" height="96" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1587976087579" />
-    <state width="1239" height="96" key="GridCell.Tab.2.right" timestamp="1587976087579">
+    <state width="1239" height="2" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1588672892658" />
+    <state width="1239" height="2" key="GridCell.Tab.2.right" timestamp="1588672892658">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1239" height="96" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1587976087579" />
+    <state width="1239" height="2" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1588672892658" />
     <state width="1239" height="114" key="GridCell.Tab.3.bottom" timestamp="1587369429304">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -521,14 +559,14 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="121" y="0" width="1038" height="680" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1587462476641" />
-    <state x="233" y="75" key="Vcs.Push.Dialog.v2" timestamp="1587462570498">
+    <state x="233" y="75" key="Vcs.Push.Dialog.v2" timestamp="1587979215642">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="75" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1587462570498" />
-    <state x="336" y="167" key="com.intellij.ide.util.TipDialog" timestamp="1587624642579">
+    <state x="233" y="75" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1587979215642" />
+    <state x="336" y="167" key="com.intellij.ide.util.TipDialog" timestamp="1588666038678">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="336" y="167" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1587624642579" />
+    <state x="336" y="167" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1588666038678" />
     <state x="363" y="236" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1585319063896">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

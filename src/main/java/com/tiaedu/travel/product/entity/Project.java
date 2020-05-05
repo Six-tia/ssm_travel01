@@ -2,6 +2,7 @@ package com.tiaedu.travel.product.entity;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.tiaedu.travel.common.web.JsonDateTypeConvert;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -28,8 +29,14 @@ public class Project implements Serializable {
     /**项目编号*/
     private String code;
     /**开始日期*/
+    //归属于Spring
+    //此格式需要与页面传来的数据的格式相同
+    //否则会出现400异常
+    //Spring默认格式为yyyy/MM/dd，因此若为此格式则不需要写以下注解
+    @DateTimeFormat(pattern = "yyyy/MM/dd")
     private Date  beginDate;
     /**结束日期*/
+    @DateTimeFormat(pattern = "yyyy/MM/dd")
     private Date  endDate;
     /**有效*/
     private Integer valid=1;
@@ -68,7 +75,9 @@ public class Project implements Serializable {
         this.name = name;
     }
 
-    //将此值填充到json串时先按照指定格式进行转换
+    //归属于Jackson
+    //将此值填充到json串时先按照指定格式进行转换，否则为长整型格式
+    //即按照此日期格式传到客户端页面
     //（com.tiaedu.travel.common.web.JsonDateTypeConvert.java）
     @JsonSerialize(using = JsonDateTypeConvert.class)
     public Date getBeginDate() {

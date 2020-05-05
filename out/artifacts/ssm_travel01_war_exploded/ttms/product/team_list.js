@@ -4,7 +4,7 @@ $(document).ready(function(){
 	.on("click",".btn-valid,.btn-invalid",doValidById)
 	.on("click",".btn-add,.btn-update",doShowEditDialog)
 	//1.初始化页面select列表
-	doGetProjectIdAndNames();
+	//doGetProjectIdAndNames();
 	//2.获取团信息,并添加到tbody
 	doGetObjects();
 });
@@ -117,7 +117,7 @@ function doInitProjectSelect(list){
 
 function doGetObjects(){
  //1.通过异步请求($.post)获得服务端团信息
- var url="team/doFindObjects.do";
+ var url="team/doFindPageTeams.do";
  var pageCurrent=
  $("#pageId").data("pageCurrent");
  if(!pageCurrent){pageCurrent=1;}

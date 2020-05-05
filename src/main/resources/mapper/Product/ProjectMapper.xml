@@ -6,8 +6,10 @@
     <!-- id:接口对应方法名
          resultType:对应结果封装到的实体
          sql语句建议不要加“;”，因为针对不同的数据库规范可能不一定适用-->
+    <!-- 因为已经在mybatis-config.xml文件中配置了包名的别名，
+         因此，resultType可以只为类名（第一个字母小写）-->
     <select id = "findProjects"
-            resultType="com.tiaedu.travel.product.entity.Project">
+            resultType="project">
            select * from tms_projects
     </select>
 
@@ -47,7 +49,7 @@
     </sql>
 
     <select id = "findPageProjects"
-            resultType="com.tiaedu.travel.product.entity.Project">
+            resultType="project">
         select * from tms_projects
             <!-- 使用已经封装好的语句段，通过其id提取 -->
             <include refid="whereQuery"/>
@@ -100,7 +102,7 @@
     </update>
 
     <update id="updateProject"
-        parameterType="com.tiaedu.travel.product.entity.Project">
+        parameterType="project">
         update tms_projects
             set code = #{code},
             name = #{name},
@@ -116,13 +118,13 @@
     </update>
 
     <select id="findProjectById"
-            resultType="com.tiaedu.travel.product.entity.Project">
+            resultType="project">
         Select * from tms_projects where id = #{id};
     </select>
 
     <!-- 只有select有resultType属性-->
     <insert id = "insertProject"
-        parameterType="com.tiaedu.travel.product.entity.Project">
+        parameterType="project">
         insert into tms_projects
             (
             code,

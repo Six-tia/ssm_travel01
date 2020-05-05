@@ -17,11 +17,11 @@ $(document).ready(function(){
 	//获得模态框上绑定的数据:id
 	var id=$("#modal-dialog").data("id");
 	//假如id有值,则根据此值进行查询.
-	if(id)doFindObjectById(id);
+	if(id)doFindProjectById(id);
 });
 /*根据id执行查找操作*/
-function doFindObjectById(id){
-	var url="project/doFindObjectById.do"
+function doFindProjectById(id){
+	var url="project/doFindProjectById.do"
 	var params={"id":id};
 	$.post(url,params,function(result){
 		if(result.state==1){
@@ -70,9 +70,11 @@ function doSaveOrUpdate(){
 	var id=$("#modal-dialog").data("id");
 	if(id)params.id=id;//动态添加属性(修改时需要id的值)
 	//根据id是否有值来判定是修改还是添加
+	console.log(params);
 	var updateUrl="project/doUpdateProject.do";
 	var insertUrl="project/doSaveProject.do";
 	var url=id?updateUrl:insertUrl;
+	console.log(url);
 	//3.2发送异步请求	
 	$.post(url,params,function(result){
 		console.log(JSON.stringify(result));
@@ -81,7 +83,7 @@ function doSaveOrUpdate(){
 		 $("#modal-dialog").modal("hide");
 		 //重新查询(调用的project_list.js中的doGetObjects)
 		 doGetObjects();
-		}else if(result.state==2){
+		}else{
 		 alert(result.message);
 		}
 	});//doSaveObject(Project entity)

@@ -22,16 +22,16 @@ $('.datepicker').datepicker({
 		</div>
 	</div>
 	<div class="form-group">
-		<label for="project-code"  class="col-sm-2 control-label">开始时间:</label> 
+		<label for="project-code"  class="col-sm-2 control-label">开始时间:</label>
 		<div class="col-sm-10">
 			<!-- datepicker为引入的控件，即时间选择的框架 -->
-		<input type="text" class="form-control datepicker " name="code" id="beginDateId">
+		<input type="text" class="form-control datepicker required" name="code" id="beginDateId">
 		</div>
 	</div>
 	<div class="form-group">
-		<label for="project-code" class="col-sm-2 control-label">结束时间:</label> 
+		<label for="project-code" class="col-sm-2 control-label">结束时间:</label>
 		<div class="col-sm-10">
-		<input type="text" class="form-control datepicker "  name="code" id="endDateId">
+		<input type="text" class="form-control datepicker required"  name="code" id="endDateId">
 		</div>
 	</div>
 	<div class="form-group">

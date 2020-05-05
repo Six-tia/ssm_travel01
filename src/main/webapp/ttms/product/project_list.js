@@ -6,7 +6,7 @@ $(document).ready(function(){
 	$("#queryFormId")
 		.on("click", ".btn-search", doQueryObjects)
 		.on("click", ".btn-valid, .btn-invalid", doValidById)
-		.on("click", ".btn-add", doLoadEditPage)
+		.on("click", ".btn-add, .btn-update", doLoadEditPage)
 	doGetObjects();
 })
 
@@ -19,6 +19,12 @@ function doLoadEditPage(){
 		title = "添加项目信息"
 	}else if($(this).hasClass("btn-update")){
 		title = "更新项目信息"
+		//this:button 某一行的按钮
+		//button.parent():<td> 每行的列元素
+		//<td>.parent():<tr> 每行
+		$("#modal-dialog").data("id",$(this).parent().parent().data("id"));
+		//定义修改时的标题
+		title="修改项目,id为"+$("#modal-dialog").data("id");
 	}
 	//$(".content").load(url);
 	//本项目模态框在index.jsp中，且默认是隐藏的
@@ -97,6 +103,7 @@ function setTableBodyRows(result){
 	for(var i in result){
 		//2.1.构建tr对象
 		var tr = $("<tr></tr>>");
+		tr.data("id", result[i].id);
 		//2.2.构建每行td对象,并填充具体数据
 		//写法1
 		//var td0 = $("<td></td>>");
@@ -119,7 +126,7 @@ function setTableBodyRows(result){
 			"<td>" + (result[i].valid?"valid":"invalid") + "</td>>" +
 			//button的class为bootstrap定义好的，可以直接去bootstrap网站上查找喜欢的样式，
 			//将对应类的名字加上就可以用了
-			"<td><input type = 'button' value = '修改' class = 'btn btn-success'></td>>";
+			"<td><input type = 'button' value = '修改' class = 'btn btn-success btn-update'></td>>";
 		//2.3.将td添加到tr中
 		tr.append(tds);
 		//2.4.将tr追加到tbody中
@@ -184,10 +191,10 @@ function doValidById(){
 }
 
 
-// /*点击添加按钮时执行一个动作
-//  *1)初始化index页面的模态框(bootstrap 框架提供)
-//  *2)在模态框内部显示project_edit.jsp
-//  * */
+/*点击添加按钮时执行一个动作
+ *1)初始化index页面的模态框(bootstrap 框架提供)
+ *2)在模态框内部显示project_edit.jsp
+ * */
 // function doShowEditDialog(){
 // 	var title;
 // 	//1.定义模态框的标题

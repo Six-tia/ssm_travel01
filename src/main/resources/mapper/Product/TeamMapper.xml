@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.tiaedu.travel.product.dao.ProjectDao">
+<mapper namespace="com.tiaedu.travel.product.dao.TeamDao">
 
-    <!-- 定义一个查询信息获取所有项目信息-->
-    <!-- id:接口对应方法名
-         resultType:对应结果封装到的实体
-         sql语句建议不要加“;”，因为针对不同的数据库规范可能不一定适用-->
-    <!-- 因为已经在mybatis-config.xml文件中配置了包名的别名，
-         因此，resultType可以只为类名（第一个字母小写）-->
-    <select id = "findProjects"
-            resultType="project">
-           select * from tms_projects
-    </select>
 
     <!-- 查询分页项目信息 -->
     <!-- #{}中放的是@Param()中的值 -->
@@ -40,27 +30,28 @@
     <sql id = "whereQuery">
         <where>
             <if test = "name != null and name != ''">
-                name like concat("%", #{name}, "%")
-            </if>
-            <if test="valid != null">
-                and valid = #{valid}
+                t.name like concat("%", #{name}, "%")
             </if>
         </where>
     </sql>
 
-    <select id = "findPageProjects"
-            resultType="project">
-        select * from tms_projects
+    <select id = "findPageTeams"
+            resultType="map">
+        select t.*, p.name projectName from
+            tms_teams t join tms_projects p
+                on t.projectId = p.id
             <!-- 使用已经封装好的语句段，通过其id提取 -->
             <include refid="whereQuery"/>
-            order by createdTime desc
+            order by t.createdTime desc
             limit #{startIndex},#{pageSize}
     </select>
 
     <!-- 查询现有项目条数 -->
     <select id = "getRowCount"
             resultType="int">
-        select count(*) from tms_projects
+        select count(*) from
+            tms_teams t join tms_projects p
+                on t.projectId = p.id
         <!-- 使用已经封装好的语句段，通过其id提取 -->
         <include refid="whereQuery"/>
     </select>

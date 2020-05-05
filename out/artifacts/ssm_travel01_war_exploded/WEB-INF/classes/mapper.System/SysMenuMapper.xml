@@ -30,7 +30,7 @@
 	</select>
 	<!-- 保存操作 -->
 	<insert id="insertObject" 
-	        parameterType="cn.tedu.ttms.system.entity.SysMenu">
+	        parameterType="com.tiaedu.travel.system.entity.SysMenu">
 		insert into
 			sys_menus(name,url,type,sort,parentId,permission,createdTime,modifiedTime)
 		values

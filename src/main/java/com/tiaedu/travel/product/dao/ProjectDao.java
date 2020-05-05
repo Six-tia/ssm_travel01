@@ -27,6 +27,10 @@ public interface ProjectDao {
      *  @Param ("startIndex") 分页查询的起始位置
      *  @Param ("pageSize") 每页的最大显示数据
      *  @return 当前页数据
+     *  若此处不加注解@Param,底层系统会将参数封装到map中，形式如下：
+     *  map.put("param1", name);
+     *  ...
+     *  mapper中使用参数值时，需要#{param1},#{param2},...
      * */
     List<Project> findPageProjects(
             @Param("name") String name,
